@@ -12,6 +12,14 @@
 [![chat][chat]][chat-url]
 [![size][size]][size-url]
 
+# @fun-stack/source-map-loader-no-warn
+
+This is a fork. Does not emit warnings. Useful for scalajs projects. Based on source-map-loader@1.1.3. For webpack 4.
+
+```sh
+npm install @fun-stack/source-map-loader-no-warn
+```
+
 # source-map-loader
 
 Extracts source maps from existing source files (from their <code>sourceMappingURL</code>).
