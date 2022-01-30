@@ -62,7 +62,7 @@ export default async function loader(input, inputMap) {
       sourceMappingURL
     ));
   } catch (error) {
-    this.emitWarning(error);
+    // this.emitWarning(error);
 
     callback(null, input, inputMap);
 
@@ -78,11 +78,11 @@ export default async function loader(input, inputMap) {
   try {
     map = JSON.parse(sourceContent.replace(/^\)\]\}'/, ""));
   } catch (parseError) {
-    this.emitWarning(
-      new Error(
-        `Failed to parse source map from '${sourceMappingURL}': ${parseError}`
-      )
-    );
+    // this.emitWarning(
+    //   new Error(
+    //     `Failed to parse source map from '${sourceMappingURL}': ${parseError}`
+    //   )
+    // );
 
     callback(null, input, inputMap);
 
@@ -125,7 +125,7 @@ export default async function loader(input, inputMap) {
       } catch (error) {
         errored = true;
 
-        this.emitWarning(error);
+        // this.emitWarning(error);
       }
 
       if (skipReading) {
